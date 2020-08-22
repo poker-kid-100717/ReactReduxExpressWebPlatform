@@ -9,7 +9,7 @@
     "serve": "cross-env MODE=production npm run build && node server/index.js",
     "build": "webpack --mode production"
   },
-  "author": "Brandon Carr",
+  "author": "Joshua Davis",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.27",
