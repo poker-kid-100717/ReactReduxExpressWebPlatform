@@ -1,0 +1,109 @@
+@import '../../styles/theme.scss';
+
+.receipt-page {
+  a {
+    color: $text-dark;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  &__subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__download-selected-btn {
+    width: 15rem;
+    svg {
+      margin-right: 1rem;
+      stroke: $white;
+      fill: $white;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+  
+}
+
+.receipt-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+
+  .receipt-finder-logo {
+    position: relative;
+    top: -3rem;
+    z-index: 0;
+  }
+
+  h2 {
+    margin: 0;
+    position: relative;
+    top: -1rem;
+  }
+  
+}
+
+.receipt-table {
+  width: 80%;
+  border-collapse: collapse;
+
+  thead {
+    font-size: 0.7rem;
+
+    .th-checkbox {
+      padding: 0;
+      width: 1rem;
+    }
+
+    th {
+      padding: 0.5rem 0rem;
+    }
+    
+    tr {
+      border-bottom: 1px solid $grey-darker;
+    }
+  }
+
+  tbody {
+
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+
+    .receipt-selected {
+      text-shadow: 0px 0px 1px $text-dark;
+      background: $grey-lighter !important;
+    }
+    
+    tr {
+      border-top: 1px solid $grey-light;
+      border-top: 1px solid $grey-light;
+
+      .td-checkbox {
+        padding-left: 1rem;
+      }
+
+      td {
+        padding: 0.9rem 0;
+
+        svg {
+          width: 1.2rem;
+          fill: $text-dark;
+        }
+        
+      }
+      
+    }
+    
+    tr:nth-child(even) {
+      background: $grey-lightest;
+    }
+  }
+  
+}

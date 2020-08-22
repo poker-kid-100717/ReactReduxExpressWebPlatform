@@ -1,0 +1,56 @@
+@import "../../styles/mixins";
+@import "../../styles/theme";
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-25rem);
+  }
+  to {
+    transform: translateY(9rem);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.popup-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: hsla(0, 0, 0, 0.46);
+  animation: 0.4s fade-in ease-in-out forwards;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.popup {
+  box-shadow: 2px 2px 9px rgba(10, 10, 20, 0.27);
+  position: absolute;
+  width: 30rem;
+  min-height: 15.5rem;
+  left: calc(50vw - 15rem);
+  background: $white;
+  border-radius: 0.75rem;
+  animation: 0.4s slide-down ease-in-out forwards;
+  z-index: 21;
+
+  &__close-button {
+    position: absolute;
+    right: -1.1rem;
+    top: -1.1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    background: $primary;
+    color: $text-light;
+    cursor: pointer;
+    @include flex-center;
+  }
+  
+}

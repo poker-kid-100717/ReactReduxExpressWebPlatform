@@ -1,0 +1,11 @@
+[
+  {
+    "uid": "pilot-webapp",
+    "append": true,
+    "watch": false,
+    "script": "server/index.js",
+    "silent": "true",
+    "sourceDir": ".",
+    "workingDir": "."
+  }
+]

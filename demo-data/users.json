@@ -1,0 +1,26 @@
+[
+    {
+        "name": {
+            "first": "John",
+            "last": "Doe"
+        },
+        "username": "jdoe123",
+        "email": "johndoe@test.com",
+        "password": "d41a81e7c144696872d3866371b6db4ece3775b2a40d554c331e5779f813ba9b",
+        "secret": "pilot-test-secret-1587515519430",
+        "lastPasswordRequestDate": 1588022005867,
+        "passwordResetToken": "2337c932-065c-4d3d-838d-fc96f4b47d55"
+    },
+    {
+        "name": {
+            "first": "Brandon",
+            "last": "Carr"
+        },
+        "username": "bcarr123",
+        "email": "carrbrandon4@gmail.com",
+        "password": "6ae445b68c7a2051fd5414d3b78db8bf0e0d797f7d62ec023010feb6e8cbbfca",
+        "secret": "pilot-test-secret-1588040084312",
+        "lastPasswordRequestDate": 1589053709425,
+        "passwordResetToken": "735d0896-0860-4875-a75d-150e3ca3d7d0"
+    }
+]

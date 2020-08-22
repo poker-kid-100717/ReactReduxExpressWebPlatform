@@ -1,0 +1,1 @@
+module.exports = () => `pilot-test-secret-${new Date().getTime()}`;

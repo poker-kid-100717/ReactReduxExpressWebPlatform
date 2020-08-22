@@ -1,0 +1,11 @@
+@import '../../styles/theme';
+
+.secondary-button{
+    background: $primary;
+    padding: 1rem 3rem;
+    color: #fff;
+    border: solid 1px $primary;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/theme";
+
+.primary-button {
+  display: block;
+  padding: 0.91rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  width: 14rem;
+  border: none;
+  background-color: $primary;
+  color: $text-light;
+  cursor: pointer;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &:disabled {
+    background: $grey-darker;
+    color: $grey-light;
+    cursor: default;
+
+    &:hover {
+      background: $grey-darker;
+    }
+    
+  }
+  
+}
