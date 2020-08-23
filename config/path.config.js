@@ -10,8 +10,6 @@ const template = path.join(src, 'index.html');
 const demoData = path.join(root, 'demo-data');
 const temporaryUserDatabase = path.join(demoData, 'users.json');
 const demoReceipts = path.join(demoData, 'receipts.json');
-const components = path.join(src, 'components');
-const searchReceipts = path.join(components, 'Home');
 
 module.exports = {
   root,
@@ -24,6 +22,4 @@ module.exports = {
   demoData,
   temporaryUserDatabase,
   demoReceipts,
-  components,
-  searchReceipts,
 }

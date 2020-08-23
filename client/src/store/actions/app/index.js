@@ -2,6 +2,7 @@ import showError from './showError';
 import hideError from './hideError';
 import login from './login';
 import logout from './logout';
+import resetPassword from './resetPassword';
 import verifyAuthUser from './verifyAuthUser';
 
 export default {
@@ -10,4 +11,5 @@ export default {
   login,
   logout,
   verifyAuthUser,
+  resetPassword,
 }

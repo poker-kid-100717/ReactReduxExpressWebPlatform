@@ -4,12 +4,6 @@ const { POST, GET } = require('../globals/constants').api
 
 module.exports = [
   {
-    name: 'Search Receipts',
-    baseRoute: apiRoutes.search,
-    method: POST,
-    handler: handlers.searchReceipts,
-  },
-  {
     name: 'Reset Password',
     baseRoute: apiRoutes.resetPassword,
     method: POST,

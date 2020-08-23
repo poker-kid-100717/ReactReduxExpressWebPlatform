@@ -1,5 +1,4 @@
 module.exports = {
-  home: '/home',
   login: '/login',
   forgotPasswordEmail: '/forgot-password-email',
   resetPassword: '/reset-password',

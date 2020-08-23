@@ -1,8 +1,8 @@
 {
-  "name": "pilot",
-  "version": "1.0.0",
+  "name": "client",
+  "version": "0.1.0",
   "private": true,
-  "description": "Pilot Web Application",
+  "description": "Billing Portal",
   "main": "server/index.js",
   "scripts": {
     "dev": "cross-env MODE=development concurrently -r \" nodemon --watch\" \"webpack-dev-server --hot --inline\"",
@@ -33,6 +33,11 @@
     "redux-thunk": "^2.3.0",
     "sendmail": "^1.6.1",
     "uuid": "^7.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build"
+    }
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",

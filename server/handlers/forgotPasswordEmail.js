@@ -12,6 +12,7 @@ module.exports = (req, res) => {
   if (req.body.email) {
     const users = getUsers();
     const foundEmailIndex = users.findIndex(f => f.email === req.body.email);
+    
     if (foundEmailIndex !== -1) {
       const uid = uuid.v4();
       const newUsers = [ ...users ];
@@ -20,6 +21,10 @@ module.exports = (req, res) => {
       jsonfile.writeFileSync(pathConfig.temporaryUserDatabase, newUsers, { EOL: '\r\n', spaces: 4 });
 
       const resetLink = links.generatePasswordResetLink(uid);
+      if(req.body.email === false)
+      {
+        res.redirect(`/prf-reset/${temporaryResetToken}`)
+      }
       email.send(req.body.email, 'Password Reset Link', `<h2>Pilot Password Reset</h2><br /><p>Click <a href="${resetLink}">here</a> to reset your password.</p><p><b>This link expires in ${securityConfig.passwordResetLinkExpiration / 60000} minutes.</b></p>`)
         .then(() => {
           sendSuccessResponse(res, {});

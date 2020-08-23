@@ -116,7 +116,7 @@ const ResetPassword = () => {
           }
         </div>
         <p className="generic-page__disclaimer">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit turpis, semper pulvinar tempus a, cursus quis erat. Integer imperdiet enim at semper condimentum. Duis vehicula ultricies orci, ut condimentum ante facilisis and also Brandon rocks!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit turpis, semper pulvinar tempus a, cursus quis erat. Integer imperdiet enim at semper condimentum. Duis vehicula ultricies orci, ut condimentum ante facilisis.
         </p>
       </div>
       <div className="generic-page__botom-image">

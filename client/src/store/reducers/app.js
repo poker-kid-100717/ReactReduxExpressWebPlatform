@@ -8,6 +8,9 @@ const defaultState = {
   isLoggingIn: false,
   isLoggingOut: false,
   loading: false,
+  isReseting: false,
+  hasReset: false,
+  message: null,
   sessionToken: sessionStorage.getItem(config["storage-key"]) || '',
   expiresAt: 0,
 }

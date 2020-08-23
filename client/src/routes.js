@@ -21,11 +21,6 @@ const Routes = () => {
         exact
       />
       <Route
-        path={_routes.home}
-        component={Pages.Home}
-        exact
-      />
-      <Route
         path={_routes.receiptFinder}
         component={Pages.ReceiptFinder}
         exact
