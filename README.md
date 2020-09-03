@@ -1,4 +1,4 @@
-# financialportal
+# fronend-portal-react-redux-express
 
 clone repo
 
